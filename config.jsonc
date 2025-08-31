@@ -24,7 +24,7 @@
     "custom/notification"
   ],
   "modules-right": [
-    "idle_inhibitor",
+    // "idle_inhibitor",
     "pulseaudio",
     //"network",
     // "power-profiles-daemon",
@@ -38,5 +38,5 @@
     //"battery#bat2",
     "tray",
     "custom/power"
-  ],
+  ]
 }
