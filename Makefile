@@ -17,9 +17,6 @@ install: $(TARGET_DIR)
 	# @cp $(FILES) $(TARGET_DIR)/
 	@$(INSTALL) -v --compare -m 644 $(FILES) $(TARGET_DIR)
 	@echo "Installation abgeschlossen. ✅"
-	# @echo "Lade Hyprland-Konfigurationsdateien neu..."
-	# @hyprctl reload
-	# @echo "Hyprland-Konfiguration neu geladen. 🔄"
 
 # Regel zum Erstellen des Zielverzeichnisses, falls es nicht existiert
 $(TARGET_DIR):
