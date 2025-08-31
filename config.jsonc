@@ -36,7 +36,8 @@
     "hyprland/language",
     //"battery",
     //"battery#bat2",
-    "tray",
+    // "tray",
+    "group/tray-expander",
     "custom/power"
   ]
 }
