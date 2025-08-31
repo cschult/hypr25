@@ -1,0 +1,42 @@
+// -*- mode: jsonc -*-
+{
+  "layer": "top", // Waybar at top layer
+  "position": "top",
+  // "position": "bottom", // Waybar position (top|bottom|left|right)
+  "height": 33, // Waybar height (to be removed for auto height)
+  // "width": 1280, // Waybar width
+  "spacing": 4, // Gaps between modules (4px)
+  "reload_style_on_change": true,
+  // Load Modules
+  "include": [
+    "~/.config/waybar/modules.json"
+  ],
+  // Choose the order of the modules
+  "modules-left": [
+    "hyprland/workspaces",
+    "hyprland/submap",
+    "mpd"
+  ],
+  "modules-center": [
+    // "hyprland/window",
+    "clock",
+    "custom/weather",
+    "custom/notification"
+  ],
+  "modules-right": [
+    "idle_inhibitor",
+    "pulseaudio",
+    //"network",
+    // "power-profiles-daemon",
+    // "cpu",
+    // "memory",
+    // "temperature",
+    //"backlight",
+    //"keyboard-state",
+    "hyprland/language",
+    //"battery",
+    //"battery#bat2",
+    "tray",
+    "custom/power"
+  ],
+}
