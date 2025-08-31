@@ -1,0 +1,21 @@
+@import "mocha.css";
+
+window#osd {
+  /* background: #{"alpha(@blue, 0.8)"}; */
+  background: rgba(24, 24, 37, 0.9);
+}
+
+progress {
+  /* background: #{"alpha(#cdd6f4"}; */
+  background: rgba(205, 214, 244, 0.9);
+}
+
+image,
+label {
+    color: rgba(205, 214, 244, 0.9);
+}
+
+progressbar:disabled,
+  image:disabled {
+  opacity: 0.5;
+}
