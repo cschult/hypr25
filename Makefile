@@ -23,6 +23,9 @@ install: $(TARGET_DIR)
 	# @cp $(FILES) $(TARGET_DIR)/
 	@$(INSTALL) -v --compare -m 644 $(FILES) $(TARGET_DIR)
 	@echo "Installation abgeschlossen. ✅"
+	@echo "Lade Waybar-Konfigurationsdateien neu..."
+	@systemctl --user reload waybar.service
+	@echo "Waybar-Konfiguration neu geladen. 🔄"
 
 # Regel zum Erstellen des Zielverzeichnisses, falls es nicht existiert
 $(TARGET_DIR):
