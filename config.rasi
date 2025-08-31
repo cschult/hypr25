@@ -1,4 +1,4 @@
-@import "catppuccin-mocha"
+// @import "catppuccin-mocha"
 configuration {
 /*	modes: "window,drun,run,ssh";*/
 /*	font: "mono 12";*/
@@ -150,12 +150,12 @@ configuration {
 /*	me-select-entry: "MousePrimary";*/
 /*	me-accept-entry: "MouseDPrimary";*/
 /*	me-accept-custom: "Control+MouseDPrimary";*/
-display-ssh:    "󰣀 ssh:";
-display-run:    "󱓞 run:";
-display-drun:   "󰣖 drun:";
-display-window: "󱂬 window:";
-display-combi:  "󰕘 combi:";
-display-filebrowser: "󰉋 filebrowser:";
+display-ssh:    "󰣀  ssh:";
+display-run:    "󱓞  run:";
+display-drun:   "󰣖  drun:";
+display-window: "󱂬  window:";
+display-combi:  "󰕘  combi:";
+display-filebrowser: "󰉋  filebrowser:";
   timeout {
       action: "kb-cancel";
       delay:  0;
@@ -179,7 +179,8 @@ display-filebrowser: "󰉋 filebrowser:";
 * {
         /* font: "JetBrains Mono Nerd Font 10"; */
         /* font: "mono 12";*/
-        /* font: "MesloLGS Nerd Font Mono 12"; */
-        font: "Hack Nerd Font Mono 12";
-        // font: "Cantarell 11";
+        // font: "MesloLGS Nerd Font Mono 11";
+        font: "Hack Nerd Font bold 11";
+        // font: "Cantarell 13 bold";
+        // font: "Jetbrains Mono Nerd Font 12";
 }
