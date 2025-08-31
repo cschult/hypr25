@@ -198,11 +198,13 @@
   },
   "pulseaudio": {
     // "scroll-step": 1, // %, can be a float
-    "format": "{volume}% {icon} {format_source}",
+    // "format": "{volume}% {icon} {format_source}",
+    "format": "{icon} {volume}% {format_source}",
     "format-bluetooth": "{volume}% {icon} {format_source}",
     "format-bluetooth-muted": " {icon} {format_source}",
     "format-muted": " {format_source}",
-    "format-source": "{volume}% ",
+    // "format-source": "{volume}% ",
+    "format-source": " {volume}%",
     "format-source-muted": "",
     "format-icons": {
       "headphone": "",
@@ -214,7 +216,7 @@
       "default": [
         "",
         "",
-        ""
+        " "
       ]
     },
     "on-click": "pavucontrol"
@@ -253,7 +255,8 @@
   "custom/weather": {
     "format": "{}°",
     "tooltip": true,
-    "interval": 3600,
+    //"interval": 3600,
+    "interval": 900,
     "exec": "wttrbar --lang de --location Hamburg",
     "return-type": "json",
     "on-click": "gnome-weather"
