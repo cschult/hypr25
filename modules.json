@@ -243,9 +243,11 @@
   // },
   "custom/power": {
     "format": "⏻",
-    "on-click": "uwsm stop",
+    // "on-click": "uwsm stop",
+    //"on-click": "wlogout",
+    "on-click": "wlogout --margin-bottom 465 --margin-top 465 --margin-left 350 --margin-right 350 --buttons-per-row 5",
     "tooltip": true,
-    "tooltip-format": "Click to exit Hyprland session"
+    "tooltip-format": "Suspend, Logout, Reboot ..."
   },
   "custom/weather": {
     "format": "{}°",
