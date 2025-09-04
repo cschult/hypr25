@@ -8,6 +8,7 @@ window {
 }
 
 button {
+  font-family: "Adwaita Sans SemiBold", sans-serif;
   border-radius: 0;
   border-color: black;
 	/* text-decoration-color: #FFFFFF; */
