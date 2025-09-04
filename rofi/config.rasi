@@ -178,9 +178,11 @@ display-filebrowser: "󰉋  filebrowser:";
 
 * {
         /* font: "JetBrains Mono Nerd Font 10"; */
-        /* font: "mono 12";*/
+        // font: "mono 12";
         // font: "MesloLGS Nerd Font Mono 11";
-        font: "Hack Nerd Font bold 11";
+        // font: "Hack Nerd Font bold 11";
         // font: "Cantarell 13 bold";
         // font: "Jetbrains Mono Nerd Font 12";
+        font: "Adwaita Sans SemiBold 12";
+        // font: "Adwaita Sans Bold 12";
 }
