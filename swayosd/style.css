@@ -1,4 +1,4 @@
-@import "mocha.css";
+@import url("mocha.css");
 
 window#osd {
   /* background: #{"alpha(@blue, 0.8)"}; */
