@@ -15,6 +15,7 @@ install:
 	cd swayosd && $(MAKE) install
 	# cd wlogout && $(MAKE) install
 	cd wleave && $(MAKE) install
+	cd bin && $(MAKE) install
 
 # Regel zum Entfernen der kopierten Dateien
 uninstall:
@@ -24,3 +25,4 @@ uninstall:
 	cd swayosd && $(MAKE) uninstall
 	# cd wlogout && $(MAKE) uninstall
 	cd wleave && $(MAKE) uninstall
+	cd bin && $(MAKE) uninstall

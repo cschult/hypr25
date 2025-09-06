@@ -1,10 +1,11 @@
 # PREFIX is environment variable, but if it is not set, then set default value
-ifeq ($(PREFIX),)
-    PREFIX := /usr/local
-endif
+# ifeq ($(PREFIX),)
+    # PREFIX := $${HOME}/.local
+# endif
 
 INSTALL = install
-DESTDIR = $(PREFIX)/bin
+# DESTDIR = $(PREFIX)/bin
+DESTDIR = $${HOME}/.local/bin
 FILES = hypr25-switch-audio-sink.sh
 
 .PHONY: all install uninstall
