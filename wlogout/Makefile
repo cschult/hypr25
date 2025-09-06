@@ -1,5 +1,7 @@
 # Definiere die Zieldateien, die kopiert werden sollen
-FILES = style.css layout
+FILES = style.css \
+				mocha.css \
+				layout
 
 # Definiere das Zielverzeichnis
 TARGET_DIR = $(HOME)/.config/wlogout

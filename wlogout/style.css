@@ -1,3 +1,5 @@
+@import url("mocha.css");
+
 * {
 	background-image: none;
 	box-shadow: none;
@@ -12,11 +14,13 @@ button {
   border-radius: 0;
   border-color: black;
 	/* text-decoration-color: #FFFFFF; */
-	text-decoration-color: #89b4fa;
+	text-decoration-color: @blue; /* #89b4fa */
   /* color: #FFFFFF; */
-  color: #89b4fa;
+  /* color: #89b4fa; */
+  color: @blue;
 	/* background-color: #1E1E1E; */
-  background-color: #181824;
+  /* background-color: #181825; */
+  background-color: @mantle;
 	border-style: solid;
 	border-width: 1px;
 	background-repeat: no-repeat;
@@ -26,12 +30,24 @@ button {
 	/* background-size: 15%; */
 }
 
-button:focus, button:active, button:hover {
+/* button:focus, button:active, button:hover { */
+button:focus, button:active {
 	text-decoration-color: #181824;
   color: #181824;
 	/* background-color: #3700B3; */
-	background-color: #89b4fa;
+	/* background-color: #89b4fa; */
+	background-color: @blue;
 	outline-style: none;
+}
+
+button:hover {
+	text-decoration-color: #181824;
+  color: #181824;
+	/* background-color: #3700B3; */
+	/* background-color: #89b4fa; */
+	background-color: @red;
+	outline-style: none;
+
 }
 
 #lock {
