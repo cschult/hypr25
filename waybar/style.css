@@ -12,10 +12,9 @@
 
 window#waybar {
     background: transparent;
-    /*background-color: @crust;*/
     /*background-color: #333333;*/
     /* background-color: rgba(30, 30, 46, 0.7); */
-    background-color: #181824;
+    background-color: @mantle;
     /* color: @overlay0; */
     color: @text;
     transition-property: background-color;
@@ -42,7 +41,7 @@ button {
 button:hover {
     background: inherit;
     /* color: @mauve; */
-    color: red;
+    color: @red;
     /*border-top: 2px solid @mauve;*/
 }
 
@@ -59,6 +58,13 @@ button:hover {
     /* background-color: rgba(0, 0, 0, 0.3); */
     color: @rosewater;
     /*border-top: 2px solid @rosewater;*/
+}
+
+#workspaces button:hover {
+    /* background-color: rgba(0, 0, 0, 0.3); */
+    /* color: @mauve; */
+    color: @red;
+    /*border-top: 2px solid @mauve;*/
 }
 
 #workspaces button.active {
