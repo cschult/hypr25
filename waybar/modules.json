@@ -245,7 +245,8 @@
     "format": "⏻",
     // "on-click": "uwsm stop",
     //"on-click": "wlogout",
-    "on-click": "wlogout --margin-bottom 465 --margin-top 465 --margin-left 350 --margin-right 350 --buttons-per-row 5",
+    // "on-click": "wlogout --margin-bottom 465 --margin-top 465 --margin-left 350 --margin-right 350 --buttons-per-row 5",
+    "on-click": "wleave --show-keybinds --no-version-info",
     "tooltip": true,
     "tooltip-format": "Suspend, Logout, Reboot ..."
   },
