@@ -41,29 +41,35 @@ button:active {
 }
 
 
-Uncomment this for colorized icons.
+/* Uncomment this for colorized icons. */
 
 button#shutdown {
-    color: #ff8d8d;
+    /* color: #ff8d8d; */
+    color: #f38ba8;
 }
 
 button#hibernate {
-    color: #a8c0ff;
+    /* color: #a8c0ff; */
+    color: #89b4fa;
 }
 
 button#reboot {
-    color: #84ffaa;
+    /* color: #84ffaa; */
+    color: #a6e3a1;
 }
 
 button#lock {
+    /* color: #f9e2af; */
     color: #f9e2af;
 }
 
 button#logout {
-    color: #f9c5af;
+    /* color: #f9c5af; */
+    color: #fab387;
 }
 
 button#suspend {
-    color: #caaff9;
+    /* color: #caaff9; */
+    color: #cba6f7;
 }
 
