@@ -1,1 +1,10 @@
 export PATH="$HOME/.local/bin:$PATH"
+export MOZ_ENABLE_WAYLAND=1
+
+# Themeing
+# export QT_STYLE_OVERRIDE=adwaita
+export QT_STYLE_OVERRIDE=adwaita-dark
+# export GTK_THEME=Adwaita
+export GTK_THEME=Adwaita:dark
+# export GTK2_RC_FILES=/usr/share/themes/Adwaita/gtk-2.0/gtkrc
+export GTK2_RC_FILES=/usr/share/themes/Adwaita-dark/gtk-2.0/gtkrc
