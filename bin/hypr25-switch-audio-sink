@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# omarchy-cmd-audio-switch (https://github.com/basecamp/omarchy)
+
 # Find all the audio sinks but exit if there are none
 sinks=($(wpctl status | sed -n '/Sinks:/,/Sources:/p' | grep -E '^\s*│\s+\*?\s*[0-9]+\.' | sed -E 's/^[^0-9]*([0-9]+)\..*/\1/'))
 [ ${#sinks[@]} -eq 0 ] && exit 1

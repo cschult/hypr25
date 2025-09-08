@@ -1,10 +1,4 @@
-# PREFIX is environment variable, but if it is not set, then set default value
-# ifeq ($(PREFIX),)
-    # PREFIX := $${HOME}/.local
-# endif
-
 INSTALL = install
-# DESTDIR = $(PREFIX)/bin
 DESTDIR = $${HOME}/.local/bin
 FILES = font-list \
 				hypr25-switch-audio-sink \

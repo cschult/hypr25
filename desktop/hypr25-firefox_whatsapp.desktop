@@ -2,7 +2,6 @@
 Version=1.0
 Name=WhatsApp
 Comment=WhatsApp Web App
-# Exec=uwsm app -- firefox --profile /home/cs/.mozilla/firefox/68lq9zlo.whatsapp "https://web.whatsapp.com/"
 Exec=hypr25-whatsapp-app
 Terminal=false
 Type=Application
