@@ -3,11 +3,13 @@
 # workspace=$(hyprctl -j clients | jq '.[] | select(.title=="WhatsApp – Mozilla Firefox") | .workspace.name' | sed 's/"//g')
 whatsapp=$(hyprctl -j clients | jq '.[] | select(.title=="WhatsApp – Mozilla Firefox")')
 
+profile="will-be-replaced-by-make"
+
 # if [ -n "$workspace" ]; then
 if [[ $whatsapp ]]; then
   # hyprctl dispatch workspace "$workspace"
   # hyprctl dispatch focuswindow title:"WhatsApp – Mozilla Firefox"
   hyprctl dispatch focuswindow title:"WhatsApp – Mozilla Firefox"
 else
-  exec setsid uwsm app -a firefox_whatsapp -- firefox --profile ~/.mozilla/firefox/68lq9zlo.whatsapp web.whatsapp.com
+  exec setsid uwsm app -a firefox_whatsapp -- firefox --profile ~/.mozilla/firefox/"$profile" web.whatsapp.com
 fi

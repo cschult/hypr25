@@ -17,6 +17,7 @@ all:
 
 install:
 	$(INSTALL) -v --compare -m 755 $(FILES) $(DESTDIR)
+	bash ../setup/prepare-hypr25-whatsapp-app.sh
 
 uninstall:
 	for file in $(FILES); do rm -f $(DESTDIR)/$$file; done

@@ -18,7 +18,6 @@ install:
 	cd bin && $(MAKE) install
 	cd uwsm && $(MAKE) install
 	cd desktop && $(MAKE) install
-	cd icons && $(MAKE) install
 
 # Regel zum Entfernen der kopierten Dateien
 uninstall:
@@ -31,4 +30,3 @@ uninstall:
 	cd bin && $(MAKE) uninstall
 	cd uwsm && $(MAKE) uninstall
 	cd desktop && $(MAKE) uninstall
-	cd icons && $(MAKE) uninstall
