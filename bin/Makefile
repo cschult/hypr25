@@ -6,8 +6,9 @@
 INSTALL = install
 # DESTDIR = $(PREFIX)/bin
 DESTDIR = $${HOME}/.local/bin
-FILES = hypr25-switch-audio-sink.sh \
-				font-list.sh
+FILES = font-list \
+				hypr25-switch-audio-sink \
+				hypr25-whatsapp-app
 
 .PHONY: all install uninstall
 
