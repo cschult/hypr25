@@ -1,6 +1,12 @@
 export PATH="$HOME/.local/bin:$PATH"
 export MOZ_ENABLE_WAYLAND=1
 
+# export HYPRCURSOR_THEME=catppuccin-mocha-green-cursors
+# export HYPRCURSOR_THEME=catppuccin-mocha-lavender-cursors
+export HYPRCURSOR_THEME=catppuccin-mocha-mauve-cursors
+export XCURSOR_SIZE=24
+export HYPRCURSOR_SIZE=24
+
 # Themeing
 # export QT_STYLE_OVERRIDE=adwaita
 export QT_STYLE_OVERRIDE=adwaita-dark

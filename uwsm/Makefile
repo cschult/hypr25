@@ -25,7 +25,7 @@ $(TARGET_DIR):
 
 # Regel zum Entfernen der kopierten Dateien
 uninstall:
-	@echo "Lösche Hyprland-Konfigurationsdateien aus $(TARGET_DIR)..."
+	@echo "Lösche Uwsm-Konfigurationsdateien aus $(TARGET_DIR)..."
 	@rm -f $(addprefix $(TARGET_DIR)/, $(FILES))
 	@echo "Leere Verzeichnisse werden entfernt (falls leer)..."
 	@rmdir --ignore-fail-on-non-empty $(TARGET_DIR)
