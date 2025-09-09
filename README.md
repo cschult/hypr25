@@ -17,7 +17,7 @@ make install.
 The main Makefile looks for the file `lastinstall` in `~/local/share/hypr25/` to
 determine if you have already installed hypr25 before.
 If you have not, it will back up your current config to
-`~/.config/[CONFIG_DIR]\_[DATE_TIME]\_hypr25_backup`.
+`~/.config/[CONFIG_DIR]_[DATE_TIME]_hypr25_backup`.
 
 ## Installation
 
