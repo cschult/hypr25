@@ -21,7 +21,7 @@ If you have not, it will back up your current config to
 
 ## Installation
 
-    git clone ssh://devmem.de/srv/git/hypr25.git
+    git clone https://github.com/hypr25.git
 
     cd hypr25
 
