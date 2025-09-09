@@ -32,26 +32,26 @@ call all other makefiles in the correct order.
 
 ## Required packages
 
-catppuccin-gtk-theme-mocha (AUR)
-firefox
-fontconfig
-hypridle
-hyprland
-hyprlock
-hyprpaper
-hyprpolkitagent
-hyprshot
-kitty
-make
-pavucontrol
-pipewire
-pipewire-pulse
-rofi
-swaync
-swayosd
-uwsm
-waybar
-wireplumber
-wleave (AUR)
-wttrbar (AUR)
-xdg-desktop-portal-hyprland
+- catppuccin-gtk-theme-mocha (AUR)
+- firefox
+- fontconfig
+- hypridle
+- hyprland
+- hyprlock
+- hyprpaper
+- hyprpolkitagent
+- hyprshot
+- kitty
+- make
+- pavucontrol
+- pipewire
+- pipewire-pulse
+- rofi
+- swaync
+- swayosd
+- uwsm
+- waybar
+- wireplumber
+- wleave (AUR)
+- wttrbar (AUR)
+- xdg-desktop-portal-hyprland
