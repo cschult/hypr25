@@ -17,7 +17,7 @@ all:
 
 clean:
 	@echo "Cleaning up backup files..."
-	find . -type f -name \*~ -exec rm {} +
+	@find . -type f -name \*~ -exec rm {} +
 
 # Regel für die Installation
 install:
@@ -41,7 +41,6 @@ install:
 
 	@echo "Installationsdatum wurde in ~/.local/share/hypr25/lastinstall gespeichert."
 
-	# $(MAKE) -C hyprland/make all
 	cd hyprland && $(MAKE) install
 	cd rofi && $(MAKE) install
 	cd waybar && $(MAKE) install

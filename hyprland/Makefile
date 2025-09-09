@@ -20,7 +20,6 @@ all:
 # Regel für die Installation
 install: $(TARGET_DIR)
 	@echo "Kopiere Hyprland-Konfigurationsdateien nach $(TARGET_DIR)..."
-	# @cp $(FILES) $(TARGET_DIR)/
 	@$(INSTALL) -v --compare -m 644 $(FILES) $(TARGET_DIR)
 	@echo "Installation abgeschlossen. ✅"
 	@echo "Lade Hyprland-Konfigurationsdateien neu..."

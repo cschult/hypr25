@@ -32,6 +32,9 @@ call all other makefiles in the correct order.
 
 ## Required packages
 
+All packages are from the archlinux repositories or the arch user repository (AUR), if not
+specified otherwise.
+
 - catppuccin-gtk-theme-mocha (AUR)
 - firefox
 - fontconfig
