@@ -55,3 +55,4 @@ call all other makefiles in the correct order.
 - wleave (AUR)
 - wttrbar (AUR)
 - xdg-desktop-portal-hyprland
+- waybar-weather (cargo install waybar-weather)

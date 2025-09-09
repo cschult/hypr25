@@ -184,9 +184,24 @@ button:hover {
 #custom-weather {
     /*color: @flamingo;*/
     color: @text;
+    padding: 0.3rem 0.6rem;
+    margin: 0.4rem 0.25rem;
+    border-radius: 6px;
+    background-color: @mantle;
 }
 
 #backlight {
     /*color: @text;*/
     color: @peach;
+}
+
+tooltip label {
+    /*background-color: @overlay0;*/
+    background-color: @mantle;
+    color: @text;
+    /* border: 1px solid @overlay2; */
+    border: 1px solid @mantle;
+    border-radius: 4px;
+    padding: 4px;
+    font-size: 14px;
 }

@@ -250,12 +250,21 @@
     "tooltip": true,
     "tooltip-format": "Suspend, Logout, Reboot ..."
   },
+  // "custom/weather": {
+  //   // "format": "{}°",
+  //   "format": "{}",
+  //   "tooltip": true,
+  //   //"interval": 3600,
+  //   "interval": 1200,
+  //   //"exec": "wttrbar --lang de --location Hamburg",
+  //   "exec": "curl wttr.in/Hamburg?format=\"%t\"",
+  //   // "return-type": "json",
+  //   "on-click": "gnome-weather"
+  // },
   "custom/weather": {
-    "format": "{}°",
     "tooltip": true,
-    //"interval": 3600,
-    "interval": 900,
-    "exec": "wttrbar --lang de --location Hamburg",
+    "interval": 600,
+    "exec": "$HOME/.cargo/bin/waybar-weather --apikey=a3b2cede7bc20305ddd22ffd8932e539 --cityid=2911298 --units=metric --high-temp=25 --low-temp=5",
     "return-type": "json",
     "on-click": "gnome-weather"
   },
