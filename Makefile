@@ -4,7 +4,11 @@ INSTALL = install
 
 all:
 	@echo "Run 'make install' to run 'make install' in"
-	@echo "hyprland, rofi, waybar, swayosd and wlogout directories."
+	@echo "hyprland, rofi, waybar, swayosd and wleave directories."
+
+clean:
+	@echo "Cleaning up backup files..."
+	find . -type f -name \*~ -exec rm {} +
 
 # Regel für die Installation
 install:
