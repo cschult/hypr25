@@ -1,5 +1,6 @@
 # Definiere die Zieldateien, die kopiert werden sollen
-FILES = bindings.conf \
+FILES = autostart.conf \
+				bindings.conf \
 				hypridle.conf \
 				hyprland.conf \
 				hyprlock.conf \
