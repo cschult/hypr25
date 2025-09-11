@@ -1,11 +1,8 @@
 {
-  // Modules configuration
-  // =====================
   "hyprland/workspaces": {
     "disable-scroll": true,
     "all-outputs": true,
     "warp-on-scroll": false,
-    // "format": "{name}: {icon}",
     "format": "{icon}",
     "format-icons": {
       "1": "1",
@@ -19,8 +16,7 @@
       "9": "9",
       "urgent": "",
       "focused": "",
-      "default": "",
-      // "active": "●"
+      "default": ""
     },
     "persistent-workspaces": {
       "1": [],
@@ -51,9 +47,7 @@
     "format": "{}",
     "format-en": "us",
     "format-de": "de",
-    // "keyboard-name": "cherry-gmbh-cherry-wireless-device",
     "keyboard-name": "hl-virtual-keyboard",
-    // "on-click": "hyprctl switchxkblayout cherry-gmbh-cherry-wireless-device next",
     "on-click": "hyprctl switchxkblayout hl-virtual-keyboard next"
   },
   "hyprland/submap": {
@@ -61,7 +55,6 @@
   },
   "mpd": {
     "max-length": 80,
-    // "format": "{stateIcon} {consumeIcon}{randomIcon}{repeatIcon}{singleIcon}{artist} - {album} - {title} ({elapsedTime:%M:%S}/{totalTime:%M:%S}) ⸨{songPosition}|{queueLength}⸩ {volume}% ",
     "format": "{stateIcon} {consumeIcon}{randomIcon}{repeatIcon}{singleIcon}{artist} - {album} - {title} ({elapsedTime:%M:%S}/{totalTime:%M:%S}) ⸨{songPosition}|{queueLength}⸩ {volume}%  ",
     "format-disconnected": "Disconnected ",
     "format-stopped": "{consumeIcon}{randomIcon}{repeatIcon}{singleIcon}Stopped ",
@@ -71,7 +64,6 @@
       "on": " "
     },
     "random-icons": {
-      //"off": "<span color=\"#f53c3c\"></span> ",
       "off": "<span> </span> ",
       "on": " "
     },
@@ -97,14 +89,9 @@
   },
   "clock": {
     "interval": 1,
-    // "timezone": "America/New_York",
-    // "format": "<span foreground='#f5c2e7'>  </span>{:%H:%M}",
-    // "format": "<span> </span>{:%H:%M}",
     "format": "{:L%a %d  %H:%M}",
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-    // "format-alt": "{:%Y-%m-%d}"
-    // "format-alt": "{:%d.%m.%Y}"
-    "format-alt": "{:L%A, %e. %B %Y  %H:%M:%S}",
+    "format-alt": "{:L%A, %e. %B %Y  %H:%M:%S}"
   },
   "cpu": {
     "format": "{usage}% ",
@@ -114,10 +101,7 @@
     "format": "{}% "
   },
   "temperature": {
-    // "thermal-zone": 2,
-    // "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
     "critical-threshold": 80,
-    // "format-critical": "{temperatureC}°C {icon}",
     "format": "{temperatureC}°C {icon}",
     "format-icons": [
       "",
@@ -126,7 +110,6 @@
     ]
   },
   "backlight": {
-    // "device": "acpi_video1",
     "format": "{percent}% {icon}",
     "format-icons": [
       "",
@@ -142,7 +125,7 @@
   },
   "battery": {
     "states": {
-      // "good": 95,
+      "good": 95,
       "warning": 30,
       "critical": 15
     },
@@ -151,8 +134,6 @@
     "format-charging": "{capacity}%  ",
     "format-plugged": "{capacity}%  ",
     "format-alt": "{time} {icon}",
-    // "format-good": "", // An empty format will hide the module
-    // "format-full": "",
     "format-icons": [
       "",
       "",
@@ -161,9 +142,6 @@
       ""
     ]
   },
-  // "battery#bat2": {
-  //      "bat": "BAT2"
-  // },
   "power-profiles-daemon": {
     "format": "{icon}",
     "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
@@ -176,7 +154,6 @@
     }
   },
   "network": {
-    // "interface": "wlp2*", // (Optional) To force the use of this interface
     "format-wifi": "{essid} ({signalStrength}%)   ",
     "format-ethernet": "{ipaddr}/{cidr} ",
     "tooltip-format": "{ifname} via {gwaddr} ",
@@ -185,13 +162,11 @@
     "format-alt": "{ifname}: {ipaddr}/{cidr}"
   },
   "pulseaudio": {
-    // "scroll-step": 1, // %, can be a float
-    // "format": "{volume}% {icon} {format_source}",
-    "format": "{icon} {volume}% {format_source}",
+    "scroll-step": 1,
+    "format": "{icon}  {volume}% {format_source}",
     "format-bluetooth": "{volume}% {icon} {format_source}",
     "format-bluetooth-muted": " {icon} {format_source}",
     "format-muted": " {format_source}",
-    // "format-source": "{volume}% ",
     "format-source": " {volume}%",
     "format-source-muted": "",
     "format-icons": {
@@ -218,42 +193,14 @@
       "default": "🎜"
     },
     "escape": true,
-    "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null" // Script in resources folder
-    // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
+    "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null"
   },
-  // "custom/power": {
-  //     "format" : "⏻  ",
-  //     "tooltip": false,
-  //     "menu": "on-click",
-  //     "menu-file": "$HOME/.config/waybar/power_menu.xml",
-  //     "menu-actions": {
-  //         "logout": "hyprctl dispatch exit",
-  //         "shutdown": "shutdown",
-  //         "reboot": "reboot",
-  //         "suspend": "systemctl suspend",
-  //         "hibernate": "systemctl hibernate"
-  //     }
-  // },
   "custom/power": {
     "format": "⏻",
-    // "on-click": "uwsm stop",
-    //"on-click": "wlogout",
-    // "on-click": "wlogout --margin-bottom 465 --margin-top 465 --margin-left 350 --margin-right 350 --buttons-per-row 5",
     "on-click": "wleave --show-keybinds --no-version-info",
     "tooltip": true,
     "tooltip-format": "Suspend, Logout, Reboot ..."
   },
-  // "custom/weather": {
-  //   // "format": "{}°",
-  //   "format": "{}",
-  //   "tooltip": true,
-  //   //"interval": 3600,
-  //   "interval": 1200,
-  //   //"exec": "wttrbar --lang de --location Hamburg",
-  //   "exec": "curl wttr.in/Hamburg?format=\"%t\"",
-  //   // "return-type": "json",
-  //   "on-click": "gnome-weather"
-  // },
   "custom/weather": {
     "tooltip": true,
     "interval": 600,
@@ -300,9 +247,4 @@
     "icon-size": 12,
     "spacing": 12
   }
-  //  "tray": {
-  // "icon-size": 21,
-  // "spacing": 10
-  //   "spacing": 6
-  // },
 }
