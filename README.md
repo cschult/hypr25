@@ -88,9 +88,16 @@ For GTK3 apps you need to install adw-gtk-theme:
 
     exec-once = gsettings set org.gnome.desktop.interface gtk-theme "adw-gtk3-dark"
 
-For Hyprland cursor theme:
+For a list of cursor themes:
 
-    exec-once = hyprctl setcursor Adwaita-dark 24
+    find /usr/share/icons ~/.local/share/icons ~/.icons -type d -name "cursors"
+
+Set GTK and Hyprland cursor theme:
+
+    exec-once = gsettings set org.gnome.desktop.interface cursor-theme "default"
+
+    <!-- exec-once = hyprctl setcursor Adwaita-dark 24 -->
+    exec-once = hyprctl setcursor default 24
 
 For the desktop icon theme (nautilus):
 
