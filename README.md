@@ -30,10 +30,17 @@ If you have not, it will back up your current config to
 Always run `make install` from the top level directory of the repository. It will
 call all other makefiles in the correct order.
 
+Run these commands after the installation:
+
+    systemctl --user enable --now waybar.service
+    systemctl --user enable --now hyprpolkitagent.service
+    systemctl --user enable --now hyprpaper.service
+    sudo systemctl enable --now swayosd-libinput-backend.service
+
 ## Required packages
 
-All packages are from the archlinux repositories or the arch user repository (AUR), if not
-specified otherwise.
+All packages are from the archlinux repositories or the arch user
+repository (AUR), if not specified otherwise.
 
 - catppuccin-gtk-theme-mocha (AUR)
 - firefox
@@ -56,6 +63,9 @@ specified otherwise.
 - waybar
 - wireplumber
 - wleave (AUR)
-- wttrbar (AUR)
 - xdg-desktop-portal-hyprland
+- xdg-desktop-portal-gtk
 - waybar-weather (cargo install waybar-weather)
+- qt5-wayland
+- qt6-wayland
+- ttf-hack-nerd
