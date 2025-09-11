@@ -10,18 +10,31 @@ The files containing catppuccin mocha color definitions are from
 
 ## Warning
 
-Running make install will overwrite your current hyprland config and some
+Running make install copies files into several folders. This will overwrite your current hyprland config and some
 other config! Therefore, please back up your current config before running
 make install.
 
-The main Makefile looks for the file `lastinstall` in `~/local/share/hypr25/` to
+The main Makefile (located in the toplevel dir of this repo) is looking for the file `lastinstall` in `~/local/share/hypr25/` to
 determine if you have already installed hypr25 before.
 If you have not, it will back up your current config to
 `~/.config/[CONFIG_DIR]_[DATE_TIME]_hypr25_backup`.
 
+Affected folders in `~/.config` are:
+
+- hypr
+- swayosd
+- waybar
+- wleave
+- rofi
+- swaync
+- uwsm
+- waybar-weather
+
+and `~/.local/share/applications`
+
 ## Installation
 
-    git clone https://github.com/hypr25.git
+    git clone https://github.com/cschult/hypr25.git
 
     cd hypr25
 
