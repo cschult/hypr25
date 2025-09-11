@@ -43,6 +43,7 @@ install:
 
 	cd hyprland && $(MAKE) install
 	cd rofi && $(MAKE) install
+	cd waybar-weather && $(MAKE) install
 	cd waybar && $(MAKE) install
 	cd swaync && $(MAKE) install
 	cd swayosd && $(MAKE) install
@@ -56,6 +57,7 @@ install:
 uninstall:
 	cd hyprland && $(MAKE) uninstall
 	cd rofi && $(MAKE) uninstall
+	cd waybar-weather && $(MAKE) uninstall
 	cd waybar && $(MAKE) uninstall
 	cd swaync && $(MAKE) uninstall
 	cd swayosd && $(MAKE) uninstall

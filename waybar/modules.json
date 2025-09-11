@@ -257,7 +257,7 @@
   "custom/weather": {
     "tooltip": true,
     "interval": 600,
-    "exec": "$HOME/.cargo/bin/waybar-weather --apikey=a3b2cede7bc20305ddd22ffd8932e539 --cityid=2911298 --units=metric --high-temp=25 --low-temp=5",
+    "exec": "$HOME/.cargo/bin/waybar-weather",
     "return-type": "json",
     "on-click": "gnome-weather"
   },
