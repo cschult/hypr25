@@ -1,7 +1,7 @@
 * {
   all: unset;
-  font-size: 14px;
-  font-family: "Hack Nerd Font";
+  font-size: 12px;
+  font-family: "Adwaita Sans SemiBold";
   transition: 200ms;
 }
 
@@ -137,7 +137,8 @@ trough {
 .control-center {
   box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.8), inset 0 0 0 1px #313244;
   border-radius: 12.6px;
-  background-color: #1e1e2e;
+  /* background-color: #1e1e2e; */
+  background-color: #181825;
   color: #cdd6f4;
   padding: 14px;
 }

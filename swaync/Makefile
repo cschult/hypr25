@@ -19,6 +19,7 @@ install: $(TARGET_DIR)
 	@echo "Installation abgeschlossen. ✅"
 	@echo "Lade swaync-Konfiguration"
 	@swaync-client --reload-config
+	@swaync-client --reload-css
 
 # Regel zum Erstellen des Zielverzeichnisses, falls es nicht existiert
 $(TARGET_DIR):
