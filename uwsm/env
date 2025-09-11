@@ -9,7 +9,9 @@ export MOZ_ENABLE_WAYLAND=1
 
 # export HYPRCURSOR_THEME=catppuccin-mocha-green-cursors
 # export HYPRCURSOR_THEME=catppuccin-mocha-lavender-cursors
-export HYPRCURSOR_THEME=catppuccin-mocha-mauve-cursors
+# export HYPRCURSOR_THEME=catppuccin-mocha-mauve-cursors
+#export HYPRCURSOR_THEME=""
+
 export XCURSOR_SIZE=24
 export HYPRCURSOR_SIZE=24
 # env = XDG_CURRENT_DESKTOP,GNOME
@@ -17,8 +19,9 @@ export HYPRCURSOR_SIZE=24
 
 # Themeing
 # export QT_STYLE_OVERRIDE=adwaita
-export QT_STYLE_OVERRIDE=adwaita-dark
 # export GTK_THEME=Adwaita
-export GTK_THEME=Adwaita:dark
+#export GTK_THEME=Adwaita:dark
 # export GTK2_RC_FILES=/usr/share/themes/Adwaita/gtk-2.0/gtkrc
-export GTK2_RC_FILES=/usr/share/themes/Adwaita-dark/gtk-2.0/gtkrc
+#export GTK2_RC_FILES=/usr/share/themes/Adwaita-dark/gtk-2.0/gtkrc
+export QT_QPA_PLATFORMTHEME=qt6ct
+#export QT_STYLE_OVERRIDE=adwaita-dark

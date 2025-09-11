@@ -42,6 +42,8 @@ Run these commands after the installation:
 All packages are from the archlinux repositories or the arch user
 repository (AUR), if not specified otherwise.
 
+- adw-gtk-theme
+- catppuccin-cursors-mocha (AUR)
 - catppuccin-gtk-theme-mocha (AUR)
 - firefox
 - fontconfig
@@ -52,20 +54,74 @@ repository (AUR), if not specified otherwise.
 - hyprpolkitagent
 - hyprshot
 - kitty
+- kvantum
 - make
+- nwg-look
 - pavucontrol
 - pipewire
 - pipewire-pulse
+- qt5-wayland
+- qt6-wayland
 - rofi
 - swaync
 - swayosd
+- ttf-hack-nerd
 - uwsm
 - waybar
+- waybar-weather (cargo install waybar-weather)
 - wireplumber
 - wleave (AUR)
-- xdg-desktop-portal-hyprland
 - xdg-desktop-portal-gtk
-- waybar-weather (cargo install waybar-weather)
-- qt5-wayland
-- qt6-wayland
-- ttf-hack-nerd
+- xdg-desktop-portal-hyprland
+- qt5ct
+- qt6ct
+- kvantum
+- breeze-icons
+
+## Theme
+
+For libadwaita gtk4 apps you can use this command:
+
+    exec-once = gsettings set org.gnome.desktop.interface color-scheme "prefer-dark"
+
+For GTK3 apps you need to install adw-gtk-theme:
+
+    exec-once = gsettings set org.gnome.desktop.interface gtk-theme "adw-gtk3-dark"
+
+For Hyprland cursor theme:
+
+    exec-once = hyprctl setcursor Adwaita-dark 24
+
+For the desktop icon theme (nautilus):
+
+    exec-once = gsettings get org.gnome.desktop.interface icon-theme
+
+One can also use GTK-Settings (nwg-look) to set themes, icons and cursors.
+
+For KDE apps you need to install: sudo pacman -S qt5ct qt6ct kvantum.
+You will need to set dark theme for QT apps from KDE more difficult than
+with Gnome. :-)
+
+Run `QT5-Einstellungen` (qt5ct) and `QT6-Einstellungen` (qt6ct) and set:
+
+- Appearance:
+  - Style: Adwaita-dark
+  - Color Scheme: Style's colors
+  - Standard dialogs: XDG Desktop Portal
+- Fonts:
+  - General: Cantarell 11
+  - Fixed width: Adwaita Mono 11
+  - Press Button `[+ create fonts.conf]`
+- Icon Theme:
+  - Papirus-Dark
+- Interface:
+  - Dialog buttons layout: GNOME
+  - Keyboard scheme: GNOME
+
+Set environment variable (hyprland.conf)
+
+    env = QT_QPA_PLATFORMTHEME,qt6ct
+
+Or in uwsm/env:
+
+    export QT_QPA_PLATFORMTHEME=qt6ct
