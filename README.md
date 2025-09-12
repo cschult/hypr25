@@ -34,7 +34,7 @@ and `~/.local/share/applications`
 
 ## Installation
 
-    git clone https://github.com/cschult/hypr25.git
+    git clone git@github.com:cschult/hypr25.git
 
     cd hypr25
 
