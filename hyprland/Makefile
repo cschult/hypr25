@@ -10,6 +10,7 @@ FILES = autostart.conf \
 
 # Definiere das Zielverzeichnis
 TARGET_DIR = $(HOME)/.config/hypr
+XDG_PORTAL_TARGET_DIR = $(HOME)/.config/xdg-desktop-portal
 
 INSTALL = install
 
@@ -22,6 +23,7 @@ all:
 install: $(TARGET_DIR)
 	@echo "Kopiere Hyprland-Konfigurationsdateien nach $(TARGET_DIR)..."
 	@$(INSTALL) -v --compare -m 644 $(FILES) $(TARGET_DIR)
+	@$(INSTALL) -v --compare -m 644 portals.conf $(XDG_PORTAL_TARGET_DIR)
 	@echo "Installation abgeschlossen. ✅"
 	@echo "Lade Hyprland-Konfigurationsdateien neu..."
 	@hyprctl reload
@@ -30,6 +32,8 @@ install: $(TARGET_DIR)
 # Regel zum Erstellen des Zielverzeichnisses, falls es nicht existiert
 $(TARGET_DIR):
 	@mkdir -p $(TARGET_DIR)
+$(XDG_PORTAL_TARGET_DIR):
+	@mkdir -p $(XDG_PORTAL_TARGET_DIR)
 
 # Regel zum Entfernen der kopierten Dateien
 uninstall:
