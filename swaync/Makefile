@@ -1,5 +1,5 @@
 # Definiere die Zieldateien, die kopiert werden sollen
-FILES = style.css
+FILES = style.css adwaita.css
 
 # Definiere das Zielverzeichnis
 TARGET_DIR = $(HOME)/.config/swaync
