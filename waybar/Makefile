@@ -1,11 +1,8 @@
 # Definiere die Zieldateien, die kopiert werden sollen
 FILES = config.jsonc \
-				mocha.css \
+				adwaita.css \
 				modules.json \
-				power_menu.xml \
 				style.css \
-				style.css_grey \
-				style.css_old
 
 # Definiere das Zielverzeichnis
 TARGET_DIR = $(HOME)/.config/waybar
