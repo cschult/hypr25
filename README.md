@@ -22,13 +22,13 @@ If you have not, it will back up your current config to
 Affected folders in `~/.config` are:
 
 - hypr
-- swayosd
-- waybar
-- wleave
 - rofi
 - swaync
+- swayosd
 - uwsm
+- waybar
 - waybar-weather
+- wleave
 
 and `~/.local/share/applications`
 
@@ -70,11 +70,14 @@ repository (AUR), if not specified otherwise.
 - kvantum
 - make
 - nwg-look
+- papirus-icon-theme
 - pavucontrol
 - pipewire
 - pipewire-pulse
 - qt5-wayland
+- qt5ct
 - qt6-wayland
+- qt6ct
 - rofi
 - swaync
 - swayosd
@@ -86,10 +89,6 @@ repository (AUR), if not specified otherwise.
 - wleave (AUR)
 - xdg-desktop-portal-gtk
 - xdg-desktop-portal-hyprland
-- qt5ct
-- qt6ct
-- kvantum
-- breeze-icons
 
 ## Theme
 
@@ -114,11 +113,11 @@ Set GTK and Hyprland cursor theme:
 
 For the desktop icon theme (nautilus):
 
-    exec-once = gsettings get org.gnome.desktop.interface icon-theme
+    exec-once = gsettings set org.gnome.desktop.interface "Papirus-Dark"
 
 One can also use GTK-Settings (nwg-look) to set themes, icons and cursors.
 
-For KDE apps you need to install: sudo pacman -S qt5ct qt6ct kvantum.
+For KDE apps you need to install: sudo pacman -S qt5ct qt6ct.
 You will need to set dark theme for QT apps from KDE more difficult than
 with Gnome. :-)
 
