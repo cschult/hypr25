@@ -1,5 +1,5 @@
 # Definiere die Zieldateien, die kopiert werden sollen
-FILES = mocha.css style.css
+FILES = adwaita.css style.css
 
 # Definiere das Zielverzeichnis
 TARGET_DIR = $(HOME)/.config/swayosd

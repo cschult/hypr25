@@ -1,18 +1,25 @@
-@import url("mocha.css");
+/* @import url("mocha.css"); */
+@import url("adwaita.css");
 
 window#osd {
   /* background: #{"alpha(@blue, 0.8)"}; */
-  background: rgba(24, 24, 37, 0.9);
+  /* background: rgba(24, 24, 37, 0.9); */
+  /* background: rgba(0, 0, 0, 0.8); */
+  background: @rgba-background5;
 }
 
 progress {
   /* background: #{"alpha(#cdd6f4"}; */
-  background: rgba(205, 214, 244, 0.9);
+  /* background: rgba(205, 214, 244, 0.9); */
+  /* background: rgba(246, 245, 244, 0.9) */
+  background: @rgba-foreground2;
+  /* background: @rgba-light1; */
 }
 
 image,
 label {
-    color: rgba(205, 214, 244, 0.9);
+    /* color: rgba(205, 214, 244, 0.9); */
+    color: @rgba-foreground2;
 }
 
 progressbar:disabled,
