@@ -152,7 +152,8 @@ configuration {
 /*	me-accept-custom: "Control+MouseDPrimary";*/
 display-ssh:    "󰣀  ssh:";
 display-run:    "󱓞  run:";
-display-drun:   "󰣖  drun:";
+// display-drun:   "󰣖  drun:";
+display-drun:   "󱓞  Search";
 display-window: "󱂬  window:";
 display-combi:  "󰕘  combi:";
 display-filebrowser: "󰉋  filebrowser:";
@@ -167,15 +168,19 @@ display-filebrowser: "󰉋  filebrowser:";
 }
 
 //@theme "/usr/share/rofi/themes/material.rasi"
-//@theme "/usr/share/rofi/themes/android_notification.rasi"
+// @theme "/usr/share/rofi/themes/android_notification.rasi"
 //@theme "/usr/share/rofi/themes/arthur.rasi"
 //@theme "/usr/share/rofi/themes/glue_pro_blue.rasi"
 // @theme "/usr/share/rofi/themes/material.rasi"
 // @theme "/usr/share/rofi/themes/Indego.rasi"
 // @theme "catppuccin-mocha.rasi"
 // @theme "catppuccin-default"
-@theme "catppuccin-lavrent-mocha.rasi"
-
+// @theme "catppuccin-lavrent-mocha.rasi"
+// @theme "/usr/share/rofi/themes/Monokai.rasi"
+// @theme "/usr/share/rofi/themes/Arc-Dark.rasi"
+// @theme "/usr/share/rofi/themes/gruvbox-dark.rasi"
+// @theme "default"
+@theme "adwaita.rasi"
 * {
         /* font: "JetBrains Mono Nerd Font 10"; */
         // font: "mono 12";

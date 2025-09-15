@@ -1,7 +1,5 @@
 # Definiere die Zieldateien, die kopiert werden sollen
-FILES = catppuccin-default.rasi \
-				catppuccin-lavrent-mocha.rasi \
-				catppuccin-mocha.rasi \
+FILES = adwaita.rasi \
 				config.rasi
 
 # Definiere das Zielverzeichnis
