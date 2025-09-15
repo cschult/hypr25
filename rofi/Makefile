@@ -1,5 +1,5 @@
 # Definiere die Zieldateien, die kopiert werden sollen
-FILES = adwaita.rasi \
+FILES = adwaita-dark.rasi \
 				config.rasi
 
 # Definiere das Zielverzeichnis

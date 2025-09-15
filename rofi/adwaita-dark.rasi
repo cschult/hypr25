@@ -1,0 +1,123 @@
+/**
+ * Rofi Adwaita-dark Theme
+ *
+ * This theme aims to mimic the Adwaita dark theme from the GNOME desktop.
+ * It uses colors and styles that are as close as possible to the original.
+ *
+ * Designed to be used with the `drun` or `show` modes of Rofi.
+ */
+
+/* ========================================================================= */
+/* --- Colors                                                            --- */
+/* ========================================================================= */
+* {
+    /* Adwaita-dark palette */
+    adw-bg-color:     #242424;
+    adw-fg-color:     #dcdcdc;
+    adw-hover-color:  #dcdcdc;
+    adw-sel-bg:       #4c8ad1;
+    adw-sel-fg:       #ffffff;
+    adw-border-color: #3e3e3e;
+    adw-shadow:       rgba(0, 0, 0, 0.4);
+
+    /* Rofi derived colors */
+    background-color:   @adw-bg-color;
+    foreground-color:   @adw-fg-color;
+    border-color:       @adw-border-color;
+    selection-color:    @adw-sel-bg;
+    selection-text-color: @adw-sel-fg;
+}
+
+/* ========================================================================= */
+/* --- Main Window                                                       --- */
+/* ========================================================================= */
+window {
+    background-color:   @background-color;
+    border:             1px;
+    border-color:       @border-color;
+    border-radius:      12px;
+    padding:            20px;
+    height:             60%;
+    width:              60%;
+    x-offset:           0;
+    y-offset:           0;
+    anchor:             center;
+    location:           center;
+    // box-shadow:         0px 4px 12px 0px @adw-shadow;
+    // box-shadow:         0px 4px 12px 0px rgb(0 0 0 / 40%);
+}
+
+/* ========================================================================= */
+/* --- Prompt and Input Bar                                              --- */
+/* ========================================================================= */
+textbox-prompt-colon {
+    expand: false;
+    str: " "; /* Empty space to remove the colon */
+    background-color: @background-color;
+    text-color: @foreground-color;
+}
+
+entry {
+    background-color:   @background-color;
+    text-color:         @foreground-color;
+    padding:            8px;
+    border:             1px solid;
+    border-color:       @border-color;
+    border-radius:      6px;
+    margin:             0 0 10px 0;
+}
+
+/* ========================================================================= */
+/* --- List View (Results)                                               --- */
+/* ========================================================================= */
+listview {
+    background-color:   @background-color;
+    border:             1px solid;
+    border-color:       @border-color;
+    border-radius:      6px;
+    margin:             10px 0 0 0;
+    padding:            5px;
+    cycle:              false;
+    scrollbar:          false;
+}
+
+element {
+    background-color:   transparent;
+    text-color:         @foreground-color;
+    padding:            8px;
+    border-radius:      4px;
+    spacing:            12px;
+}
+
+element selected {
+    background-color:   @selection-color;
+    text-color:         @selection-text-color;
+    border-radius:      4px;
+}
+
+/* ========================================================================= */
+/* --- Icons and Text                                                    --- */
+/* ========================================================================= */
+element-icon {
+    size:               2.0ch;
+    background-color:   transparent;
+    text-color:         inherit;
+}
+
+element-text {
+    background-color:   transparent;
+    text-color:         inherit;
+}
+
+/* ========================================================================= */
+/* --- Message and Status Lines (if used)                                --- */
+/* ========================================================================= */
+message {
+    background-color:   @background-color;
+    text-color:         @foreground-color;
+    padding:            8px;
+    border:             1px solid;
+    border-color:       @border-color;
+    border-radius:      6px;
+    margin:             10px 0 0 0;
+}
