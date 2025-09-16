@@ -4,10 +4,24 @@ Hypr25 is my personal hyprland setup.
 Hypr25 uses uwsm for session management. I'm using arch linux, so package names
 are from arch and my differ for other linux distributions.
 
-Parts of the waybar setup and the hypr25-switch-audio-sink are borrowed from omarchy.
 The files containing catppuccin mocha color definitions are from
 [github.com/catppuccin](https://github.com/catppuccin/), i think.
 Well, actually this setup uses Adwaita colors.
+
+## Tools
+
+Hypr25 comes with some tools:
+
+- hypr25-toggle-audio-sink
+- hypr25-whatsapp-app
+
+Hypr25-toggle-audio-sink is a bash script which toggles between two
+audio sinks. It fails silently if there are no sinks. It only
+can toggle two audi sinks. If there aree more than two, it toggles
+only two of them. Hypr25-toggle-audio-sink is bound to `CTRL+ALT+L`.
+
+Hypr25-whatsapp-app starts whatsapp in a separate window or switches
+to an already existing whatsapp window. It is bound to `$mainMod SHIFT W`.
 
 ## Warning
 
