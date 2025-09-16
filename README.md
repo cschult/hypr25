@@ -13,12 +13,17 @@ Well, actually this setup uses Adwaita colors.
 Hypr25 comes with some tools:
 
 - hypr25-toggle-audio-sink
+- hypr25-rofi-switch-audio-sink
 - hypr25-whatsapp-app
 
 Hypr25-toggle-audio-sink is a bash script which toggles between two
 audio sinks. It fails silently if there are no sinks. It only
 can toggle two audi sinks. If there aree more than two, it toggles
 only two of them. Hypr25-toggle-audio-sink is bound to `CTRL+ALT+L`.
+
+Hypr25-rofi-switch-audio-sink opens a rofi menu to selct an audio sink.
+The menu opens when clickin on the pulseaudio-section in waybar.
+Right mouse button there opens pavucontrol.
 
 Hypr25-whatsapp-app starts whatsapp in a separate window or switches
 to an already existing whatsapp window. It is bound to `$mainMod SHIFT W`.
