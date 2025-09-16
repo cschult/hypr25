@@ -1,6 +1,7 @@
 // @import "catppuccin-mocha"
 configuration {
 /*	modes: "window,drun,run,ssh";*/
+	modes: "drun,emoji,window";
 /*	font: "mono 12";*/
 /*	font: "MesloLGS Nerd Font Mono 12"; */
 /*        font: "Hack Nerd Font Mono 12"; */
@@ -16,30 +17,31 @@ configuration {
 /*	ssh-command: "{terminal} -e {ssh-client} {host} [-p {port}]";*/
 /*	run-command: "{cmd}";*/
 /*	run-list-command: "";*/
-/*	run-shell-command: "{terminal} -e {cmd}";*/
+// /*	run-shell-command: "{terminal} -e {cmd}";*/
 /*	window-command: "wmctrl -i -R {window}";*/
 /*	window-match-fields: "all";*/
 /*	icon-theme: ;*/
-/*	drun-match-fields: "name,generic,exec,categories,keywords";*/
+/*  drun-match-fields: "name,generic,exec,categories,keywords"; */
 /*	drun-categories: ;*/
-/*	drun-show-actions: false;*/
-/*	drun-display-format: "{name} [<span weight='light' size='small'><i>({generic})</i></span>]";*/
-/*	drun-url-launcher: "xdg-open";*/
+/*	drun-show-actions: false; */
+/*	drun-display-format: "{name} [<span weight='light' size='small'><i>({generic})</i></span>]"; */
+	drun-url-launcher: "xdg-open";
 /*	disable-history: false;*/
 /*	ignored-prefixes: "";*/
 /*	sort: false;*/
 /*	sorting-method: "normal";*/
 /*	case-sensitive: false;*/
-/*	cycle: true;*/
+/*	cycle: true; */
 /*	sidebar-mode: false;*/
-/*	hover-select: false;*/
+// /*	hover-select: false;*/
+	hover-select: true;
 /*	eh: 1;*/
-/*	auto-select: false;*/
+/*	auto-select: false; */
 /*	parse-hosts: false;*/
 /*	parse-known-hosts: true;*/
 /*	combi-modes: "window,run";*/
 /*	matching: "normal";*/
-/*	tokenize: true;*/
+/*	tokenize: true; */
 /*	m: "-5";*/
 /*	filter: ;*/
 /*	dpi: -1;*/
@@ -73,7 +75,8 @@ configuration {
 /*	display-recursivebrowser: ;*/
 /*	kb-primary-paste: "Control+V,Shift+Insert";*/
 /*	kb-secondary-paste: "Control+v,Insert";*/
-/*	kb-secondary-copy: "Control+c";*/
+// /*	kb-secondary-copy: "Control+c";*/
+	kb-secondary-copy: "";
 /*	kb-clear-line: "Control+w";*/
 /*	kb-move-front: "Control+a";*/
 /*	kb-move-end: "Control+e";*/
@@ -112,7 +115,8 @@ configuration {
 /*	kb-toggle-case-sensitivity: "grave,dead_grave";*/
 /*	kb-toggle-sort: "Alt+grave";*/
 /*	kb-cancel: "Escape,Control+g,Control+bracketleft";*/
-/*	kb-custom-1: "Alt+1";*/
+// /*	kb-custom-1: "Alt+1";*/
+	kb-custom-1: "Ctrl+c";
 /*	kb-custom-2: "Alt+2";*/
 /*	kb-custom-3: "Alt+3";*/
 /*	kb-custom-4: "Alt+4";*/
@@ -147,16 +151,19 @@ configuration {
 /*	ml-row-right: "ScrollRight";*/
 /*	ml-row-up: "ScrollUp";*/
 /*	ml-row-down: "ScrollDown";*/
-/*	me-select-entry: "MousePrimary";*/
-/*	me-accept-entry: "MouseDPrimary";*/
+// /*	me-select-entry: "MousePrimary";*/
+	me-select-entry: "";
+	me-accept-entry: "MousePrimary";
 /*	me-accept-custom: "Control+MouseDPrimary";*/
 display-ssh:    "󰣀  ssh:";
 display-run:    "󱓞  run:";
 // display-drun:   "󰣖  drun:";
-display-drun:   "󱓞  Search";
-display-window: "󱂬  window:";
+display-drun:   "";
+// display-window: "󱂬  window:";
+display-window: "";
 display-combi:  "󰕘  combi:";
 display-filebrowser: "󰉋  filebrowser:";
+display-emoji: "";
   timeout {
       action: "kb-cancel";
       delay:  0;
@@ -180,7 +187,7 @@ display-filebrowser: "󰉋  filebrowser:";
 // @theme "/usr/share/rofi/themes/Arc-Dark.rasi"
 // @theme "/usr/share/rofi/themes/gruvbox-dark.rasi"
 // @theme "default"
-@theme "adwaita.rasi"
+@theme "adwaita-dark.rasi"
 * {
         /* font: "JetBrains Mono Nerd Font 10"; */
         // font: "mono 12";
