@@ -69,6 +69,7 @@ repository (AUR), if not specified otherwise.
 - hyprshot
 - kitty
 - kvantum
+- libpulse
 - make
 - nwg-look
 - papirus-icon-theme

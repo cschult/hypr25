@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# Find all the audio sinks but exit if there are none
+mapfile sinks < <(pactl list sinks short | cut -f 2)
+
+[ ${#sinks[@]} -eq 0 ] && exit 1
+
+# Find current audio sink
+current="$(pactl get-default-sink)"
+
+if [ "$current" == ${sinks[0]} ]; then
+  pactl set-default-sink ${sinks[1]}
+else
+  pactl set-default-sink ${sinks[0]}
+fi
