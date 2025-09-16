@@ -2,7 +2,7 @@
 
 Hypr25 is my personal hyprland setup.
 Hypr25 uses uwsm for session management. I'm using arch linux, so package names
-are from arch and my differ for other linux distributions.
+are from arch and may differ for other linux distributions.
 
 The files containing catppuccin mocha color definitions are from
 [github.com/catppuccin](https://github.com/catppuccin/), i think.
