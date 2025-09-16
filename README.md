@@ -1,22 +1,23 @@
 # Hypr25 - my personal hyprland setup
 
-Hypr25 is my personal hyprland setup. It uses catppuccin mocha colors. I have
-lazyvim and kitty already set up to use catppuccin mocha colors as well,
-so they are not setup by hypr25. Hypr25 uses uwsm for session management.
+Hypr25 is my personal hyprland setup.
+Hypr25 uses uwsm for session management. I'm using arch linux, so package names
+are from arch and my differ for other linux distributions.
 
 Parts of the waybar setup and the hypr25-switch-audio-sink are borrowed from omarchy.
 The files containing catppuccin mocha color definitions are from
 [github.com/catppuccin](https://github.com/catppuccin/), i think.
+Well, actually this setup uses Adwaita colors.
 
 ## Warning
 
-Running make install copies files into several folders. This will overwrite your current hyprland config and some
-other config! Therefore, please back up your current config before running
-make install.
+Running make install copies files into several folders. This will overwrite your
+current hyprland config and some other config! Therefore, please back up your
+current config before running make install.
 
-The main Makefile (located in the toplevel dir of this repo) is looking for the file `lastinstall` in `~/local/share/hypr25/` to
-determine if you have already installed hypr25 before.
-If you have not, it will back up your current config to
+The main Makefile (located in the toplevel dir of this repo) is looking for the
+file `lastinstall` in `~/local/share/hypr25/` to determine if you have already
+installed hypr25 before. If you have not, it will back up your current config to
 `~/.config/[CONFIG_DIR]_[DATE_TIME]_hypr25_backup`.
 
 Affected folders in `~/.config` are:
@@ -30,7 +31,7 @@ Affected folders in `~/.config` are:
 - waybar-weather
 - wleave
 
-and `~/.local/share/applications`
+and `~/.local/share/applications`, `~/.local/bin`
 
 ## Installation
 
@@ -79,6 +80,7 @@ repository (AUR), if not specified otherwise.
 - qt6-wayland
 - qt6ct
 - rofi
+- rofi-emoji
 - swaync
 - swayosd
 - ttf-hack-nerd
