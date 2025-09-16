@@ -182,7 +182,7 @@
         " "
       ]
     },
-    "on-click": "pavucontrol"
+    "on-click": "hypr25-rofi-switch-audio-sink"
   },
   "custom/media": {
     "format": "{icon} {}",
