@@ -140,8 +140,6 @@ For the desktop icon theme (nautilus):
 One can also use GTK-Settings (nwg-look) to set themes, icons and cursors.
 
 For KDE apps you need to install: sudo pacman -S qt5ct qt6ct.
-You will need to set dark theme for QT apps from KDE more difficult than
-with Gnome. :-)
 
 Run `QT5-Einstellungen` (qt5ct) and `QT6-Einstellungen` (qt6ct) and set:
 
