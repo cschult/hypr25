@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# get the list of sinks and show them in wofi
+#
+# result=$(pactl list sinks short | cut -f 2 | wofi -G --show=dmenu --hide-scroll --allow-markup --define=hide_search=true)
+# result=$(pactl list sinks short | cut -f 2 | wofi -G --show=dmenu --hide-scroll --allow-markup --insensitive)
+#
+result=$(pactl list sinks short | cut -f 2 | rofi -dmenu -p "" -i -l 5 -theme-str 'window {width: 50%; height: 30%;}' -theme-str 'entry { enabled: false;}')
+
+# set the default sink to the selected one. Do nothing if no sink was selected.
+[[ -n $result ]] && pactl set-default-sink $result
