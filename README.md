@@ -175,4 +175,5 @@ Or in uwsm/env:
 
     export QT_QPA_PLATFORMTHEME=qt6ct
 
+
 This project is licensed under the terms of the MIT license.
