@@ -18,11 +18,12 @@ Hypr25 comes with some tools:
 
 Hypr25-toggle-audio-sink is a bash script which toggles between two
 audio sinks. It fails silently if there are no sinks. It only
-can toggle two audi sinks. If there aree more than two, it toggles
+can toggle two audio sinks. If there are more than two, it toggles
 only two of them. Hypr25-toggle-audio-sink is bound to `CTRL+ALT+L`.
 
-Hypr25-rofi-switch-audio-sink opens a rofi menu to selct an audio sink.
-The menu opens when clickin on the pulseaudio-section in waybar.
+Hypr25-rofi-switch-audio-sink opens a rofi menu to select an audio sink.
+It is useful with more than two audio sinks.
+The menu opens when clicking on the pulseaudio-section in waybar.
 Right mouse button there opens pavucontrol.
 
 Hypr25-whatsapp-app starts whatsapp in a separate window or switches
@@ -35,9 +36,9 @@ current hyprland config and some other config! Therefore, please back up your
 current config before running make install.
 
 The main Makefile (located in the toplevel dir of this repo) is looking for the
-file `lastinstall` in `~/local/share/hypr25/` to determine if you have already
-installed hypr25 before. If you have not, it will back up your current config to
-`~/.config/[CONFIG_DIR]_[DATE_TIME]_hypr25_backup`.
+file `lastinstall` in `~/.local/share/hypr25/` to determine if you have already
+installed hypr25 before. If that file doesn't exist, it will back up your
+current configs to `~/.config/[CONFIG_DIR]_[DATE_TIME]_hypr25_backup`.
 
 Affected folders in `~/.config` are:
 
@@ -50,7 +51,7 @@ Affected folders in `~/.config` are:
 - waybar-weather
 - wleave
 
-and `~/.local/share/applications`, `~/.local/bin`
+and also `~/.local/share/applications` and `~/.local/bin`.
 
 ## Installation
 
@@ -63,7 +64,7 @@ and `~/.local/share/applications`, `~/.local/bin`
 Always run `make install` from the top level directory of the repository. It will
 call all other makefiles in the correct order.
 
-Run these commands after the installation:
+Run these commands once after the installation:
 
     systemctl --user enable --now waybar.service
     systemctl --user enable --now hyprpolkitagent.service
@@ -72,10 +73,16 @@ Run these commands after the installation:
 
 ## Required packages
 
-All packages are from the archlinux repositories or the arch user
+All packages are from the arch linux repositories or the arch user
 repository (AUR), if not specified otherwise.
 
+This list maybe is not complete. I have Gnome desktop installed on my system,
+so maybe if you don't have Gnome desktop installed, installing adwaita-fonts
+may pull a lot of dependencies. I did not test to install hypr25 on a fresh
+arch linux installation.
+
 - adw-gtk-theme
+- adwaita-fonts
 - catppuccin-cursors-mocha (AUR)
 - catppuccin-gtk-theme-mocha (AUR)
 - firefox
@@ -141,7 +148,7 @@ One can also use GTK-Settings (nwg-look) to set themes, icons and cursors.
 
 For KDE apps you need to install: sudo pacman -S qt5ct qt6ct.
 
-Run `QT5-Einstellungen` (qt5ct) and `QT6-Einstellungen` (qt6ct) and set:
+Run `QT5 Settings` (qt5ct) and `QT6 Settings` (qt6ct) and set:
 
 - Appearance:
   - Style: Adwaita-dark
