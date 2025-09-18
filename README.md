@@ -85,6 +85,7 @@ arch linux installation.
 - adwaita-fonts
 - catppuccin-cursors-mocha (AUR)
 - catppuccin-gtk-theme-mocha (AUR)
+- desktop-file-utils
 - firefox
 - fontconfig
 - hypridle
@@ -171,6 +172,5 @@ Set environment variable (hyprland.conf)
 Or in uwsm/env:
 
     export QT_QPA_PLATFORMTHEME=qt6ct
-
 
 This project is licensed under the terms of the MIT license.
