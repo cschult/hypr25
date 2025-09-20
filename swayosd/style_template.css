@@ -1,5 +1,5 @@
 /* @import url("mocha.css"); */
-@import url("/home/cs/.local/share/hypr25/adwaita-dark.css");
+@import url("DATA_HOME_PLACEHOLDER/hypr25/adwaita-dark.css");
 
 window#osd {
   /* background: #{"alpha(@blue, 0.8)"}; */

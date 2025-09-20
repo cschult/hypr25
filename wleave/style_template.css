@@ -3,7 +3,7 @@
  * Or use your own colors. Both work, but using your own colors may break the automatic light/dark theme function.
  */
 
-@import url("/home/cs/.local/share/hypr25/adwaita-dark.css");
+@import url("DATA_HOME_PLACEHOLDER/hypr25/adwaita-dark.css");
 
 window {
     /* background-color: rgba(12, 12, 12, 0.8); */
