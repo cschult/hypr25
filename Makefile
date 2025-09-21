@@ -9,6 +9,12 @@ CONFIG_DIRS = hypr \
 							wleave \
 							uwsm \
 
+# Setze CONFIG_HOME auf XDG_CONFIG_HOME, wenn gesetzt, oder auf $HOME/.config
+CONFIG_HOME := $(or $(XDG_CONFIG_HOME),$(HOME)/.config)
+
+# Setze DATA_HOME auf XDG_DATA_HOME, wenn gesetzt, oder auf $HOME/.local/share
+DATA_HOME := $(or $(XDG_DATA_HOME),$(HOME)/.local/share)
+
 .PHONY: all install uninstall
 
 all:
@@ -22,24 +28,24 @@ clean:
 # Regel für die Installation
 install:
 	# Überprüft, ob das Verzeichnis ~/.local/share/hypr25 existiert ODER die Datei lastinstall fehlt.
-	@if [ ! -d "$${HOME}/.local/share/hypr25" ] || [ ! -f "$${HOME}/.local/share/hypr25/lastinstall" ]; then \
-		echo "Datei ~/.local/share/hypr25/lastinstall nicht gefunden. Erstelle ein Backup ..."; \
+	@if [ ! -d "$(DATA_HOME)/hypr25" ] || [ ! -f "$(DATA_HOME)/hypr25/lastinstall" ]; then \
+		echo "Datei $(DATA_HOME)/hypr25/lastinstall nicht gefunden. Erstelle ein Backup ..."; \
 		for cdir in $(CONFIG_DIRS); do \
-			if [ -d "$${HOME}/.config/$$cdir" ]; then \
+			if [ -d "$(CONFIG_HOME)/$$cdir" ]; then \
 				echo "Backup von $$cdir..."; \
 				echo "Datum: $(CURRENT_DATE)"; \
-				rsync -av "$${HOME}/.config/$$cdir" "$${HOME}/.config/$${cdir}_$(CURRENT_DATE)_hypr25_backup"; \
+				rsync -av "$(CONFIG_HOME)/$$cdir" "$(CONFIG_HOME)/$${cdir}_$(CURRENT_DATE)_hypr25_backup"; \
 			fi; \
 		done; \
 	fi
 
 	# Stellt sicher, dass das Zielverzeichnis existiert (erstellt es, falls nötig)
-	@mkdir -p "$${HOME}/.local/share/hypr25"
+	@mkdir -p "$(DATA_HOME)/hypr25"
 
 	# Schreibt das aktuelle Datum und die Uhrzeit in die Datei lastinstall
-	@date "+%Y-%m-%d %H:%M:%S" > "$${HOME}/.local/share/hypr25/lastinstall"
+	@date "+%Y-%m-%d %H:%M:%S" > "$(DATA_HOME)/hypr25/lastinstall"
 
-	@echo "Installationsdatum wurde in ~/.local/share/hypr25/lastinstall gespeichert."
+	@echo "Installationsdatum wurde in $(DATA_HOME)/hypr25/lastinstall gespeichert."
 
 	cd styles && $(MAKE) install
 	cd hyprland && $(MAKE) install
