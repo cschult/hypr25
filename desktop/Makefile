@@ -28,10 +28,6 @@ install: $(APPLICATIONS_DIR)
 			echo "$$file ist aktuell, überspringe..."; \
 		fi \
 	done
-	if [ ! -f hypr25-firefox_whatsapp.desktop ] || [ hypr25-firefox_whatsapp_template.desktop -nt hypr25-firefox_whatsapp.desktop ]; then \
-		cp hypr25-firefox_whatsapp_template.desktop hypr25-firefox_whatsapp.desktop; \
-		desktop-file-edit --set-icon=$(ICONS_DIR)/WhatsApp.png hypr25-firefox_whatsapp.desktop; \
-	fi
 	@echo "Kopiere Desktop-Dateien nach $(APPLICATIONS_DIR)..."
 	@$(INSTALL) -v --compare -m 644 $(DESKTOP_FILES) $(APPLICATIONS_DIR)
 	@echo "Kopiere Icons nach $(ICONS)"
