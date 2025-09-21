@@ -16,6 +16,8 @@ Hypr25 comes with some tools:
 - hypr25-rofi-switch-audio-sink
 - hypr25-whatsapp-app
 
+They are installed to ~/.local/bin. Make sure that ~/.local/bin is in your PATH.
+
 Hypr25-toggle-audio-sink is a bash script which toggles between two
 audio sinks. It fails silently if there are no sinks. It only
 can toggle two audio sinks. If there are more than two, it toggles
