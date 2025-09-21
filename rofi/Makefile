@@ -20,7 +20,7 @@ all:
 
 # Regel für die Installation
 install: $(TARGET_DIR)
-	if [ ! -f config.rasi ] || [ config.rasi -ot config_template.rasi ]; then \
+	if [ ! -f config.rasi ] || [ config_template.rasi -nt config.rasi ]; then \
 		cp config_template.rasi config.rasi; \
 		sed -i "s|DATA_HOME_PLACEHOLDER|$(DATA_HOME)|" config.rasi; \
 	fi

@@ -21,7 +21,7 @@ all:
 
 # Regel für die Installation
 install: $(TARGET_DIR)
-	if [ ! -f style.css ] || [ style.css -ot style_template.css ]; then \
+	if [ ! -f style.css ] || [ style_template.css -nt style.css ]; then \
 		cp style_template.css style.css; \
 		sed -i "s|DATA_HOME_PLACEHOLDER|$(DATA_HOME)|" style.css; \
 	fi
