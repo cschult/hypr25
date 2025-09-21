@@ -187,7 +187,9 @@ display-emoji: "";
 // @theme "/usr/share/rofi/themes/Arc-Dark.rasi"
 // @theme "/usr/share/rofi/themes/gruvbox-dark.rasi"
 // @theme "default"
-@theme "adwaita-dark.rasi"
+// @theme "adwaita-dark.rasi"
+@theme "/home/cs/.local/share/hypr25/adwaita-dark.rasi"
+// @theme "/home/cs/.local/share/hypr25/adwaita.rasi"
 * {
         /* font: "JetBrains Mono Nerd Font 10"; */
         // font: "mono 12";
