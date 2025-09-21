@@ -2,9 +2,14 @@
 DESKTOP_FILES = hypr25-firefox_whatsapp.desktop
 ICONS = icons/WhatsApp.png
 
+# Setze DATA_HOME auf XDG_DATA_HOME, wenn gesetzt, oder auf $HOME/.local/share
+DATA_HOME := $(or $(XDG_DATA_HOME),$(HOME)/.local/share)
+
 # Definiere das Zielverzeichnis
-DESKTOP_DIR = $${HOME}/.local/share/applications
-ICONS_DIR = $${HOME}/.local/share/icons/hypr25
+# DESKTOP_DIR = $${HOME}/.local/share/applications
+DESKTOP_DIR = $(DATA_HOME)/applications
+# ICONS_DIR = $${HOME}/.local/share/icons/hypr25
+ICONS_DIR = $(DATA_HOME)/icons/hypr25
 
 INSTALL = install
 

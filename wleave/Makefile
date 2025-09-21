@@ -1,7 +1,6 @@
 # Definiere die Zieldateien, die kopiert werden sollen
 FILES = style.css layout.json
 
-# CONFIG_DIR ?= ${XDG_CONFIG_HOME:-${HOME}/.config}
 # Setze CONFIG_HOME auf XDG_CONFIG_HOME, wenn gesetzt, oder auf $HOME/.config
 CONFIG_HOME := $(or $(XDG_CONFIG_HOME),$(HOME)/.config)
 

@@ -8,7 +8,7 @@ CONFIG_HOME := $(or $(XDG_CONFIG_HOME),$(HOME)/.config)
 DATA_HOME := $(or $(XDG_DATA_HOME),$(HOME)/.local/share)
 
 # Definiere das Zielverzeichnis
-TARGET_DIR = $(HOME)/.config/swaync
+TARGET_DIR = $(CONFIG_HOME)/swaync
 
 INSTALL = install
 

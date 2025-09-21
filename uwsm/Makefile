@@ -1,8 +1,11 @@
 # Definiere die Zieldateien, die kopiert werden sollen
 FILES = env
 
+# Setze CONFIG_HOME auf XDG_CONFIG_HOME, wenn gesetzt, oder auf $HOME/.config
+CONFIG_HOME := $(or $(XDG_CONFIG_HOME),$(HOME)/.config)
+
 # Definiere das Zielverzeichnis
-TARGET_DIR = $(HOME)/.config/uwsm
+TARGET_DIR = $(CONFIG_HOME)/uwsm
 
 INSTALL = install
 

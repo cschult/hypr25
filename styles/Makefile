@@ -1,5 +1,5 @@
 # Definiere die Zieldateien, die kopiert werden sollen
-FILES = adwaita-dark.css
+FILES = adwaita-dark.css adwaita-dark.rasi adwaita.rasi
 
 # Definiere das Zielverzeichnis
 # Setze DATA_HOME auf XDG_DATA_HOME, wenn gesetzt, oder auf $HOME/.local/share

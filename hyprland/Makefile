@@ -8,9 +8,13 @@ FILES = autostart.conf \
 				mocha.conf \
 				README.md
 
+# Setze CONFIG_HOME auf XDG_CONFIG_HOME, wenn gesetzt, oder auf $HOME/.config
+CONFIG_HOME := $(or $(XDG_CONFIG_HOME),$(HOME)/.config)
+
 # Definiere das Zielverzeichnis
-TARGET_DIR = $(HOME)/.config/hypr
-XDG_PORTAL_TARGET_DIR = $(HOME)/.config/xdg-desktop-portal
+TARGET_DIR = $(CONFIG_HOME)/hypr
+
+XDG_PORTAL_TARGET_DIR = $(CONFIG_HOME)/xdg-desktop-portal
 
 INSTALL = install
 

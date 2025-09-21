@@ -1,6 +1,5 @@
 # Definiere die Zieldateien, die kopiert werden sollen
 FILES = config.jsonc \
-				adwaita.css \
 				modules.json \
 				style.css \
 
@@ -11,7 +10,7 @@ CONFIG_HOME := $(or $(XDG_CONFIG_HOME),$(HOME)/.config)
 DATA_HOME := $(or $(XDG_DATA_HOME),$(HOME)/.local/share)
 
 # Definiere das Zielverzeichnis
-TARGET_DIR = $(HOME)/.config/waybar
+TARGET_DIR = $(CONFIG_HOME)/waybar
 
 INSTALL = install
 
