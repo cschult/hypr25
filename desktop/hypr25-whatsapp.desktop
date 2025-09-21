@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Name=WhatsApp Web
+Comment=WhatsApp Web App - Firefox
+Exec=hypr25-whatsapp-app
+Terminal=false
+Type=Application
+Icon=/home/cs/.local/share/icons/hypr25/WhatsApp.png
+StartupNotify=true
+X-Desktop-File-Install-Version=0.28

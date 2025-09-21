@@ -1,5 +1,5 @@
 # Definiere die Zieldateien, die kopiert werden sollen
-DESKTOP_FILES = hypr25-firefox_whatsapp.desktop
+DESKTOP_FILES = hypr25-whatsapp.desktop
 
 ICONS = icons/WhatsApp.png
 
@@ -20,14 +20,10 @@ all:
 
 # Regel für die Installation
 install: $(APPLICATIONS_DIR)
-	for file in $(DESKTOP_FILES); do \
-		if [ ! -f $(APPLICATIONS_DIR)/$$file ] || [ $$file -nt $(APPLICATIONS_DIR)/$$file ]; then \
-			echo "Kopiere $$file nach $(APPLICATIONS_DIR)..."; \
-			$(INSTALL) -v --compare -m 644 $$file $(APPLICATIONS_DIR); \
-		else \
-			echo "$$file ist aktuell, überspringe..."; \
-		fi \
-	done
+	if [ ! -f hypr25-whatsapp.desktop ] || [ template_hypr25-whatsapp.desktop -nt hypr25-whatsapp.desktop ]; then \
+		cp template_hypr25-whatsapp.desktop hypr25-whatsapp.desktop; \
+		desktop-file-edit --set-icon=$(ICONS_DIR)/WhatsApp.png hypr25-whatsapp.desktop; \
+	fi
 	@echo "Kopiere Desktop-Dateien nach $(APPLICATIONS_DIR)..."
 	@$(INSTALL) -v --compare -m 644 $(DESKTOP_FILES) $(APPLICATIONS_DIR)
 	@echo "Kopiere Icons nach $(ICONS)"
