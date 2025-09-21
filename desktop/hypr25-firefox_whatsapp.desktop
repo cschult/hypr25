@@ -1,9 +1,0 @@
-[Desktop Entry]
-Version=1.0
-Name=WhatsApp
-Comment=WhatsApp Web App
-Exec=hypr25-whatsapp-app
-Terminal=false
-Type=Application
-Icon=/home/cs/.local/share/icons/hypr25/WhatsApp.png
-StartupNotify=true
