@@ -1,0 +1,13 @@
+#!/bin/bash
+
+source_file="adwaita-dark.css"
+
+cat "$source_file" | grep -v 'rgba(' | while read -a line; do
+  echo "${line[1]}" = $(echo "${line[2]%%\;}" | sed 's/\#//')
+done
+
+cat "$source_file" | grep 'rgba(' | while read -a line; do
+  echo "${line[1]}" = $(echo "${line[2]%%\;}${line[3]}${line[4]}${line[5]%%\;}" | sed 's/\#//')
+done
+
+# vim: set ft=bash

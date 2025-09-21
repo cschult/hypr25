@@ -41,13 +41,13 @@ install:
 
 	@echo "Installationsdatum wurde in ~/.local/share/hypr25/lastinstall gespeichert."
 
+	cd styles && $(MAKE) install
 	cd hyprland && $(MAKE) install
 	cd rofi && $(MAKE) install
 	cd waybar-weather && $(MAKE) install
 	cd waybar && $(MAKE) install
 	cd swaync && $(MAKE) install
 	cd swayosd && $(MAKE) install
-	# cd wlogout && $(MAKE) install
 	cd wleave && $(MAKE) install
 	cd bin && $(MAKE) install
 	cd uwsm && $(MAKE) install
@@ -61,8 +61,8 @@ uninstall:
 	cd waybar && $(MAKE) uninstall
 	cd swaync && $(MAKE) uninstall
 	cd swayosd && $(MAKE) uninstall
-	# cd wlogout && $(MAKE) uninstall
 	cd wleave && $(MAKE) uninstall
 	cd bin && $(MAKE) uninstall
 	cd uwsm && $(MAKE) uninstall
 	cd desktop && $(MAKE) uninstall
+	cd styles && $(MAKE) uninstall

@@ -1,5 +1,7 @@
 INSTALL = install
+
 DESTDIR = $${HOME}/.local/bin
+
 FILES = font-list \
 				hypr25-toggle-audio-sink \
 				hypr25-rofi-switch-audio-sink \
