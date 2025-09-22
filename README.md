@@ -38,9 +38,11 @@ current hyprland config and some other config! Therefore, please back up your
 current config before running make install.
 
 The main Makefile (located in the toplevel dir of this repo) is looking for the
-file `lastinstall` in `~/.local/share/hypr25/` to determine if you have already
-installed hypr25 before. If that file doesn't exist, it will back up your
-current configs to `~/.config/[CONFIG_DIR]_[DATE_TIME]_hypr25_backup`.
+file `lastinstall` in `$XDG_DATA_HOME/hypr25/ or ~/.local/share/hypr25/` to
+determine if you have already installed hypr25 before. If that file doesn't exist,
+it will back up your current configs to `$XDG_CONFIG_HOME/ or ~/.config/ into
+a folder named [CONFIG_DIR]_[DATE_TIME]_hypr25_backup`. So `rofi/` will be
+backed up as `rofi_2025-09-22_hypr25_backup`
 
 Affected folders in `~/.config` are:
 
@@ -53,7 +55,7 @@ Affected folders in `~/.config` are:
 - waybar-weather
 - wleave
 
-and also `~/.local/share/applications` and `~/.local/bin`.
+and also `$XDG_DATA_HOME/applications or ~/.local/share/applications` and `~/.local/bin`.
 
 ## Installation
 
