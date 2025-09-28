@@ -177,4 +177,15 @@ Or in uwsm/env:
 
     export QT_QPA_PLATFORMTHEME=qt6ct
 
+## Hints
+
+To prevent firefox from restoring the previous session, set in about:config
+
+browser.sessionstore.resume_from_crash
+
+to false (double click the line).
+
+This setting is stored in the firefox profile used for whatsapp, so you other
+profiles are not affected.
+
 This project is licensed under the terms of the MIT license.
