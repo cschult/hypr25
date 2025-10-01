@@ -4,6 +4,11 @@
 
 # See https://wiki.hyprland.org/Configuring/Environment-variables/
 
+LIBVA_DRIVER_NAME=nvidia
+XDG_SESSION_TYPE=wayland
+GBM_BACKEND=nvidia-drm
+__GLX_VENDOR_LIBRARY_NAME=nvidia
+
 export PATH="$HOME/.local/bin:$PATH"
 export MOZ_ENABLE_WAYLAND=1
 
