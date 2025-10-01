@@ -70,10 +70,11 @@ call all other makefiles in the correct order.
 
 Run these commands once after the installation:
 
-    systemctl --user enable --now waybar.service
-    systemctl --user enable --now hyprpolkitagent.service
-    systemctl --user enable --now hyprpaper.service
-    sudo systemctl enable --now swayosd-libinput-backend.service
+      systemctl --user enable --now waybar.service
+      systemctl --user enable --now hyprpolkitagent.service
+      systemctl --user enable --now hyprpaper.service
+      systemctl --user enable --now hypridle.service
+      sudo systemctl enable --now swayosd-libinput-backend.service
 
 ## Required packages
 
@@ -179,13 +180,23 @@ Or in uwsm/env:
 
 ## Hints
 
-To prevent firefox from restoring the previous session, set in about:config
+- To prevent firefox from restoring the previous session, set in about:config
 
-browser.sessionstore.resume_from_crash
+  > browser.sessionstore.resume_from_crash
 
-to false (double click the line).
+  to false (double click the line).
 
-This setting is stored in the firefox profile used for whatsapp, so you other
-profiles are not affected.
+  This setting is stored in the firefox profile used for whatsapp, so you other
+  profiles are not affected.
+
+- Xdg-desktop-portal-hyprland doesn’t implement a file picker. For that, it is
+  recommended to install xdg-desktop-portal-gtk alongside XDPH.
+
+  Edit ~/.config/xdg-desktop-portal/portals.conf as shown here:
+
+  ```
+  [preferred]
+  default = hyprland;gtk
+  ```
 
 This project is licensed under the terms of the MIT license.
